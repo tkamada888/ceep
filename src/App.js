@@ -1,17 +1,17 @@
-import { ListaDeNotas } from "./components/ListaDeNotas" //caso a exportacao seja default nao precisa das chaves
-import { FormularioCadastro } from "./components/FormularioCadastro"
-import { Component } from "react";
-
+import React, { Component } from "react";
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
+import "./assets/App.css";
+import './assets/index.css';
 class App extends Component {
   render() {
     return (
-      <section>
+      <section className="conteudo">
         <FormularioCadastro />
         <ListaDeNotas />
       </section>
     );
   }
-
 }
 
 export default App;
